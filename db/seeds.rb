@@ -24,9 +24,11 @@ AnswerChoice.create!(question_id: 1, text: "Gary Johnson")
 
 AnswerChoice.create!(question_id: 2, text: "San Francisco")
 AnswerChoice.create!(question_id: 2, text: "Los Angeles")
+AnswerChoice.create!(question_id: 2, text: "Fremont")
 
 Response.create!(user_id: 3, answer_choice_id: 3)
 Response.create!(user_id: 4, answer_choice_id: 2)
 Response.create!(user_id: 2, answer_choice_id: 1)
 Response.create!(user_id: 1, answer_choice_id: 4)
 Response.create!(user_id: 3, answer_choice_id: 4)
+Response.create!(user_id: 4, answer_choice_id: 5)
