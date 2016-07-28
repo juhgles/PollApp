@@ -36,7 +36,8 @@ class Question < ActiveRecord::Base
   has_many :answer_choices,
     primary_key: :id,
     foreign_key: :question_id,
-    class_name: :AnswerChoice
+    class_name: :AnswerChoice,
+    :dependent => :destroy
 
   belongs_to :poll,
     primary_key: :id,

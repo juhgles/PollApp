@@ -9,6 +9,9 @@ class Response < ActiveRecord::Base
     end
   end
 
+  def better_respondent_not_author
+  end
+
   def poll_author_id
     self.answer_choice.question.poll.author_id
   end

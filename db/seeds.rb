@@ -17,6 +17,7 @@ Poll.create!(title: "Favorite City", author_id: 2)
 
 Question.create!(poll_id: 1, text: "Who do you support for president in 2016?")
 Question.create!(poll_id: 2, text: "Do you prefer San Francisco or Los Angeles?")
+Question.create!(poll_id: 2, text: "Do you prefer San Francisco or Fremont?")
 
 AnswerChoice.create!(question_id: 1, text: "Hillary Clinton")
 AnswerChoice.create!(question_id: 1, text: "Donald Trump")
@@ -24,7 +25,8 @@ AnswerChoice.create!(question_id: 1, text: "Gary Johnson")
 
 AnswerChoice.create!(question_id: 2, text: "San Francisco")
 AnswerChoice.create!(question_id: 2, text: "Los Angeles")
-AnswerChoice.create!(question_id: 2, text: "Fremont")
+AnswerChoice.create!(question_id: 3, text: "San Francisco")
+AnswerChoice.create!(question_id: 3, text: "Fremont")
 
 Response.create!(user_id: 3, answer_choice_id: 3)
 Response.create!(user_id: 4, answer_choice_id: 2)
@@ -32,3 +34,4 @@ Response.create!(user_id: 2, answer_choice_id: 1)
 Response.create!(user_id: 1, answer_choice_id: 4)
 Response.create!(user_id: 3, answer_choice_id: 4)
 Response.create!(user_id: 4, answer_choice_id: 5)
+Response.create!(user_id: 4, answer_choice_id: 6)
